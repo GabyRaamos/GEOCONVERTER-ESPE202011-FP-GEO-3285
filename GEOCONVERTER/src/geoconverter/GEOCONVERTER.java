@@ -32,11 +32,17 @@ public class GEOCONVERTER {
 
             System.out.println("  What would you like to do? ");
             System.out.println("▒ 1.  Kilometers to meters.");
+	    System.out.println("▒ 2.  Meters to centimeters.");
+            System.out.println("▒ 3.  Meters to millimeters");
+            System.out.println("▒ 4.  Meters to nanometers.");
 
             System.out.println("Enter your menu option >> ");
 
             double kilometers;
             double meters;
+	    double centimeters;
+            double millimeters;
+            double nanometers;
 
             option = input.nextInt();
 
@@ -47,6 +53,12 @@ public class GEOCONVERTER {
                     kilometers = input.nextDouble();
                     meters = kilometers * 1000;
                     System.out.println(kilometers + " Kilometers is equal to " + meters + " meters\n ");
+                    break;
+		case 2:
+                    System.out.println("enter enter the data --> ");
+                    meters = input.nextDouble();
+                    centimeters = meters * 100;
+                    System.out.println(meters + " meters is equal to " + centimeters + " centimeters\n ");
                     break;
 
                 case 14:
