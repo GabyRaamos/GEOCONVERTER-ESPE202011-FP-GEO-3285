@@ -60,6 +60,18 @@ public class GEOCONVERTER {
                     centimeters = meters * 100;
                     System.out.println(meters + " meters is equal to " + centimeters + " centimeters\n ");
                     break;
+		case 3:
+                    System.out.println("enter enter the data --> ");
+                    meters = input.nextDouble();
+                    millimeters = meters * 1000;
+                    System.out.println(meters + " meters is equal to " + millimeters + " millimeters\n ");
+                    break;	
+                case 4:
+                    System.out.println("enter enter the data --> ");
+                    meters = input.nextDouble();
+                    nanometers = meters * 1000000000;
+                    System.out.println(meters + " meters is equal to " + nanometers + " nanometers\n ");
+                    break;
 
                 case 14:
                     System.out.println(" ** GOOD BYE USER ** ");
