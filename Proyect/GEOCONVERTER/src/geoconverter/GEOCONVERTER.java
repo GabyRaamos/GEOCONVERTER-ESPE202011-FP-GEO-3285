@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Fernando
+ * @author Evelin
  */
 public class GEOCONVERTER {
 
@@ -42,6 +42,10 @@ public class GEOCONVERTER {
             System.out.println("▒ 8.  Centimeters to inches.");
             System.out.println("▒ 9.  Millimeters to nanometers.");
             System.out.println("▒ 10. Kilometers to centimeters.");
+            System.out.println("▒ 11. Miles to meters.");
+            System.out.println("▒ 12. Meters to yards.");
+            System.out.println("▒ 13. Gigameters to meters.");
+            System.out.println("█ 14. Exit");
 
             System.out.println("Enter your menu option >> ");
 
@@ -125,7 +129,26 @@ public class GEOCONVERTER {
                     centimeters = kilometers * 100000;
                     System.out.println(kilometers + " kilometers is equal to " + centimeters + " centimeters\n ");
                     break;
+ case 11:
+                    System.out.println("enter enter the data --> ");
+                    miles = input.nextDouble();
+                    meters = miles * 1609.344;
+                    System.out.println(miles + "miles is equal to " + meters + " meters\n ");
+                    break;
 
+                case 12:
+                    System.out.println("enter enter the data --> ");
+                    meters = input.nextDouble();
+                    yard = meters * 1.09361;
+                    System.out.println(meters + " meters is equal to " + yard + " yard\n ");
+                    break;
+
+                case 13:
+                    System.out.println("enter enter the data --> ");
+                    gigameters = input.nextDouble();
+                    meters = gigameters * 1000000000;
+                    System.out.println(gigameters + " gigameters is equal to " + meters + " meters\n ");
+                    break;
 
 
                 case 14:
