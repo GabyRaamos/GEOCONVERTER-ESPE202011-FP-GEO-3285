@@ -1,0 +1,9 @@
+# GEOCONVERTER-ESPE202011-FP-GEO-3285
+GEO-CONVERTER, has been thought as an application, whose objective is to help students in the conversion of units.
+The constant evolution of technology has greatly helped the development of civilizations. When talking about GIS (Geographic Information System) technology has played a very important role here, to the point that with a simple device that goes from a cell phone to a GPS, you can know its geographical information, all this, with the ease of pressing a button. But for this to be possible, it is necessary for this "artifact to think for itself", we are talking about its programming language.
+GEO-CONVERTER, has been thought as an application, whose objective is to help students in the conversion of units.
+Unit conversion is the transformation of the numerical value of a physical quantity, expressed in a certain unit of measurement, into another equivalent numerical value and expressed in another unit of measurement of the same nature.
+This process is usually done with the use of "conversion factors" or unit conversion tables.
+It is often enough to multiply by fraction (factor of a conversion) and the result is another equivalent measure, in which the units have changed. When the change of units implies the transformation of several units, several conversion factors can be used one after another, so that the final result will be the equivalent measure in the units we are looking for.
+For example, to change 8 meters to yards, knowing that one meter equals 1.093613 yards, multiply 8 by 1.093613; which results in 8.748904 yards.
+Geoconverter does the same, providing you with a varied menu of options, where you just need to enter the data of the known length unit and the equivalence in the searched / desired unit will be returned.
