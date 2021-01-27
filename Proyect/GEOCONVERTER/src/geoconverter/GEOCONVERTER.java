@@ -24,21 +24,21 @@ public class GEOCONVERTER {
 
         do {
 
-            System.out.println("â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–‘â–’*        WELCOME TO GEOCONVERTER       *â–‘â–’â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ\n"
-                    + "â–ˆ                         VERSION 0.1                             â–ˆ\n"
-                    + "â–ˆ                       20 JANUARY 2021                           â–ˆ\n"
-                    + "â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ\n"
+            System.out.println("███████░▒*        WELCOME TO GEOCONVERTER       *░▒███████\n"
+                    + "█                         VERSION 1.0                             █\n"
+                    + "█                       20 JANUARY 2021                           █\n"
+                    + "████████████████████ ███████████████████████\n"
                     + "                   Transformer of units of length                \n"
-                    + "_______________________");
-
+                    + "                     _______________________         \n");
+            
             System.out.println("  What would you like to do? ");
-            System.out.println("â–’ 1.  Kilometers to meters.");
-            System.out.println("â–’ 2.  Meters to centimeters.");
-            System.out.println("â–’ 3.  Meters to millimeters");
-            System.out.println("â–’ 4.  Meters to nanometers.");
-            System.out.println("â–’ 5.  Meters to feet.");
-            System.out.println("â–’ 6.  Meters to inches.");
-            System.out.println("â–’ 7.  Centimeters to micrometers.");
+            System.out.println("▒ 1.  Kilometers to meters.");
+            System.out.println("▒ 2.  Meters to centimeters.");
+            System.out.println("▒ 3.  Meters to millimeters");
+            System.out.println("▒ 4.  Meters to nanometers.");
+            System.out.println("▒ 5.  Meters to feet.");
+            System.out.println("▒ 6.  Meters to inches.");
+            System.out.println("▒ 7.  Centimeters to micrometers.");
             System.out.println("▒ 8.  Centimeters to inches.");
             System.out.println("▒ 9.  Millimeters to nanometers.");
             System.out.println("▒ 10. Kilometers to centimeters.");
@@ -51,6 +51,7 @@ public class GEOCONVERTER {
 
             double kilometers;
             double meters;
+            double miles;
             double centimeters;
             double millimeters;
             double nanometers;
@@ -129,7 +130,7 @@ public class GEOCONVERTER {
                     centimeters = kilometers * 100000;
                     System.out.println(kilometers + " kilometers is equal to " + centimeters + " centimeters\n ");
                     break;
- case 11:
+                case 11:
                     System.out.println("enter enter the data --> ");
                     miles = input.nextDouble();
                     meters = miles * 1609.344;
@@ -149,7 +150,6 @@ public class GEOCONVERTER {
                     meters = gigameters * 1000000000;
                     System.out.println(gigameters + " gigameters is equal to " + meters + " meters\n ");
                     break;
-
 
                 case 14:
                     System.out.println(" ** GOOD BYE USER ** ");
