@@ -39,6 +39,9 @@ public class GEOCONVERTER {
             System.out.println("â–’ 5.  Meters to feet.");
             System.out.println("â–’ 6.  Meters to inches.");
             System.out.println("â–’ 7.  Centimeters to micrometers.");
+            System.out.println("▒ 8.  Centimeters to inches.");
+            System.out.println("▒ 9.  Millimeters to nanometers.");
+            System.out.println("▒ 10. Kilometers to centimeters.");
 
             System.out.println("Enter your menu option >> ");
 
@@ -50,6 +53,8 @@ public class GEOCONVERTER {
             double inches;
             double micrometers;
             double feet;
+            double gigameters;
+            double yard;
 
             option = input.nextInt();
 
@@ -100,6 +105,28 @@ public class GEOCONVERTER {
                     micrometers = centimeters * 10000000;
                     System.out.println(centimeters + " centimeters is equal to " + micrometers + " micrometers\n ");
                     break;
+                case 8:
+                    System.out.println("enter enter the data --> ");
+                    centimeters = input.nextDouble();
+                    inches = centimeters * 0.3937;
+                    System.out.println(centimeters + " centimeters is equal to " + inches + " inches\n ");
+                    break;
+
+                case 9:
+                    System.out.println("enter enter the data --> ");
+                    millimeters = input.nextDouble();
+                    nanometers = millimeters * 1000000;
+                    System.out.println(millimeters + " millimeters is equal to " + nanometers + " nanometers\n ");
+                    break;
+
+                case 10:
+                    System.out.println("enter enter the data --> ");
+                    kilometers = input.nextDouble();
+                    centimeters = kilometers * 100000;
+                    System.out.println(kilometers + " kilometers is equal to " + centimeters + " centimeters\n ");
+                    break;
+
+
 
                 case 14:
                     System.out.println(" ** GOOD BYE USER ** ");
