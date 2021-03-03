@@ -30,7 +30,7 @@ public class GEOCONVERTER {
                     + "████████████████████ ███████████████████████\n"
                     + "                   Transformer of units of length                \n"
                     + "                     _______________________         \n");
-            
+
             System.out.println("  What would you like to do? ");
             System.out.println("▒ 1.  Kilometers to meters.");
             System.out.println("▒ 2.  Meters to centimeters.");
@@ -164,5 +164,4 @@ public class GEOCONVERTER {
         } while (option != 14);
 
     }
-
 }
