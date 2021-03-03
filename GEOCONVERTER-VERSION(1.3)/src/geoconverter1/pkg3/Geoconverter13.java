@@ -8,8 +8,7 @@ import java.util.Scanner;
  * @author GROUP 8
  */
 public class Geoconverter13 {
-
-    /**
+     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -185,9 +184,33 @@ public class Geoconverter13 {
                     System.out.println(Arrays.toString(Gigameters) + "gigameters is equal to " + transformGmToM(Gigameters) + " meters\n ");
 
                     break;
-
-                case 14:
-                    System.out.println(" ** GOOD BYE USER ** ");
+                    
+                case 14: {
+                    double kilometers;
+                    double milimeters;
+                    
+                    System.out.println("enter the data in kilometers : ");
+                    kilometers = input.nextDouble();
+                    input.nextLine();
+                    
+                    milimeters = transformKmToMm(kilometers);
+                    System.out.println(kilometers + " km is equal to " + milimeters + " mm\n ");
+                } break;
+                
+                case 15: {
+                    double miles;
+                    double milimeters;
+                    
+                    System.out.println("enter the data in miles : ");
+                    miles = input.nextDouble();
+                    input.nextLine();
+                    
+                    milimeters = transformMilesToMm(miles);
+                    System.out.println(miles + " miles is equal to " + milimeters + " mm\n ");
+                } break;
+                    
+                case 16:
+                    System.out.println(" * GOOD BYE USER * ");
                     System.exit(0);
                     break;
 
@@ -196,7 +219,7 @@ public class Geoconverter13 {
                     break;
 
             }
-        } while (option != 14);
+        } while (option != 16);
 
     }
 
@@ -206,7 +229,7 @@ public class Geoconverter13 {
                 + "█                        03  MARCH  2021                          █\n"
                 + "████████████████████ ███████████████████████\n"
                 + "                   Transformer of units of length                \n"
-                + "                     _______________________         \n");
+                + "                     _________         \n");
 
         System.out.println("  What you need to transform? ");
         System.out.println("▒ 1.  Kilometers to meters.");
@@ -222,7 +245,9 @@ public class Geoconverter13 {
         System.out.println("▒ 11. Miles to meters.");
         System.out.println("▒ 12. Meters to yards.");
         System.out.println("▒ 13. Gigameters to meters.");
-        System.out.println("█ 14. Exit");
+        System.out.println("▒ 14. Kilometers to Millimeters");
+        System.out.println("▒ 15. Miles to Millimeters");
+        System.out.println("█ 16. Exit");
 
         System.out.println("Enter your menu option >> ");
     }
@@ -340,5 +365,20 @@ public class Geoconverter13 {
         return meters6;
 
     }
-
+    
+    private static double transformKmToMm(double kilometers) {
+        double milimeters = 0;
+        
+        milimeters = (kilometers * 1000000);
+        
+        return milimeters;
+    }
+    
+    private static double transformMilesToMm(double miles) {
+        double milimeters = 0;
+        
+        milimeters = (miles * 1.609e+6);
+        
+        return milimeters;
+    }
 }
