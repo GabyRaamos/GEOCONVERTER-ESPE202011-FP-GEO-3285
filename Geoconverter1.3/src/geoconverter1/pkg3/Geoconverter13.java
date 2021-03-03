@@ -85,18 +85,53 @@ public class Geoconverter13 {
                     break;
 
                 case 6:
-                    transformerMtoIn(input);
+                    System.out.println("enter the data in Inches");
+                    double[] Inches = new double[1];
+                    double meters4;
+                    for (int i = 0; i < 1; i++) {
+                        Inches[i] = input.nextDouble();
+                    }
+                    System.out.println(Arrays.toString(Inches) + "inches is equal to " + transformMtoInches(Inches) + " meters\n");
+
                     break;
 
                 case 7:
-                    transformerCmtoMc(input);
+
+                    System.out.println("enter the data in Centimeters2 : ");
+                    double[] Centimeters2 = new double[1];
+                    double micrometers;
+                    for (int i = 0; i < 1; i++) {
+                        Centimeters2[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Centimeters2) + "centimeters is equal to " + transformCmtoMc(Centimeters2) + " micrometers\n ");
+
                     break;
+
                 case 8:
-                    transformerCmtoIn(input);
+
+                    System.out.println("enter the data in Centimeters : ");
+                    double[] Centimeters = new double[1];
+                    double inches2;
+                    for (int i = 0; i < 1; i++) {
+                        Centimeters[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Centimeters) + "centimeters is equal to " + transformCmtoIn(Centimeters) + " inches\n ");
+
                     break;
 
                 case 9:
-                    transformerMmToNano(input);
+
+                    System.out.println("enter the data in Millimeters : ");
+                    double[] Millimeters = new double[1];
+                    double nanometers2;
+                    for (int i = 0; i < 1; i++) {
+                        Millimeters[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Millimeters) + "millimeters is equal to " + transformMmToNano(Millimeters) + " nanometers\n ");
+
                     break;
 
                 case 10:
@@ -197,6 +232,42 @@ public class Geoconverter13 {
         return meters3;
     }
 
+    private static double transformMtoInches(double[] Inches) {
+        double meters4 = 0;
+        for (int i = 0; i < Inches.length; i++) {
+            meters4 = (Inches[i] * 39.37);
+        }
+        return meters4;
+
+    }
+
+    private static double transformCmtoMc(double[] Centimeters) {
+        double micrometers = 0;
+        for (int i = 0; i < Centimeters.length; i++) {
+            micrometers = (Centimeters[i] * 10000000);
+        }
+        return micrometers;
+
+    }
+
+    private static double transformCmtoIn(double[] Centimeters2) {
+        double inches = 0;
+        for (int i = 0; i < Centimeters2.length; i++) {
+            inches = (Centimeters2[i] * 0.3937);
+        }
+        return inches;
+
+    }
+
+    private static double transformMmToNano(double[] Millimeters) {
+        double nanometers2 = 0;
+        for (int i = 0; i < Millimeters.length; i++) {
+            nanometers2 = (Millimeters[i] * 1000000);
+        }
+        return nanometers2;
+
+    }
+
     private static void transformGmToM(Scanner input) {
         double gigameters;
         double meters;
@@ -231,42 +302,6 @@ public class Geoconverter13 {
         kilometers = input.nextDouble();
         centimeters = kilometers * 100000;
         System.out.println(kilometers + " kilometers is equal to " + centimeters + " centimeters\n ");
-    }
-
-    private static void transformerMmToNano(Scanner input) {
-        double millimeters;
-        double nanometers;
-        System.out.println("enter enter the data --> ");
-        millimeters = input.nextDouble();
-        nanometers = millimeters * 1000000;
-        System.out.println(millimeters + " millimeters is equal to " + nanometers + " nanometers\n ");
-    }
-
-    private static void transformerCmtoIn(Scanner input) {
-        double centimeters;
-        double inches;
-        System.out.println("enter enter the data --> ");
-        centimeters = input.nextDouble();
-        inches = centimeters * 0.3937;
-        System.out.println(centimeters + " centimeters is equal to " + inches + " inches\n ");
-    }
-
-    private static void transformerCmtoMc(Scanner input) {
-        double centimeters;
-        double micrometers;
-        System.out.println("enter enter the data --> ");
-        centimeters = input.nextDouble();
-        micrometers = centimeters * 10000000;
-        System.out.println(centimeters + " centimeters is equal to " + micrometers + " micrometers\n ");
-    }
-
-    private static void transformerMtoIn(Scanner input) {
-        double meters;
-        double inches;
-        System.out.println("enter enter the data --> ");
-        meters = input.nextDouble();
-        inches = meters * 39.37;
-        System.out.println(meters + " meters is equal to " + inches + " inches\n ");
     }
 
 }
