@@ -135,18 +135,55 @@ public class Geoconverter13 {
                     break;
 
                 case 10:
-                    transformerKmToCm(input);
+
+                    System.out.println("enter the data in Kilometers : ");
+                    double[] Kilometers2 = new double[1];
+                    double centimeters2;
+                    for (int i = 0; i < 1; i++) {
+                        Kilometers2[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Kilometers2) + "kilometers is equal to " + transformKmToCm(Kilometers2) + " centimeters\n ");
+
                     break;
+
                 case 11:
-                    transformerMiToM(input);
+
+                    System.out.println("enter the data in Miles : ");
+                    double[] Miles = new double[1];
+                    double meters5;
+                    for (int i = 0; i < 1; i++) {
+                        Miles[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Miles) + "miles is equal to " + transformMiToM(Miles) + " meters\n ");
+
                     break;
 
                 case 12:
-                    transformerMtoYd(input);
+
+                    System.out.println("enter the data in Meters : ");
+                    double[] Meters3 = new double[1];
+                    double yards;
+                    for (int i = 0; i < 1; i++) {
+                        Meters3[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Meters3) + "meters is equal to " + transformMtoYd(Meters3) + " yards\n ");
+
                     break;
 
                 case 13:
-                    transformGmToM(input);
+
+                    System.out.println("enter the data in Gigameters : ");
+                    double[] Gigameters = new double[1];
+                    double meters6;
+                    for (int i = 0; i < 1; i++) {
+                        Gigameters[i] = input.nextDouble();
+                    }
+
+                    System.out.println(Arrays.toString(Gigameters) + "gigameters is equal to " + transformGmToM(Gigameters) + " meters\n ");
+
                     break;
 
                 case 14:
@@ -302,6 +339,42 @@ public class Geoconverter13 {
         kilometers = input.nextDouble();
         centimeters = kilometers * 100000;
         System.out.println(kilometers + " kilometers is equal to " + centimeters + " centimeters\n ");
+    }
+
+    private static double transformKmToCm(double[] Kilometers2) {
+        double centimeters2 = 0;
+        for (int i = 0; i < Kilometers2.length; i++) {
+            centimeters2 = (Kilometers2[i] * 100000);
+        }
+        return centimeters2;
+
+    }
+
+    private static double transformMiToM(double[] Miles) {
+        double meters5 = 0;
+        for (int i = 0; i < Miles.length; i++) {
+            meters5 = (Miles[i] * 1609.344);
+        }
+        return meters5;
+
+    }
+
+    private static double transformMtoYd(double[] Meters3) {
+        double yards = 0;
+        for (int i = 0; i < Meters3.length; i++) {
+            yards = (Meters3[i] * 1.09361);
+        }
+        return yards;
+
+    }
+
+    private static double transformGmToM(double[] Gigameters) {
+        double meters6 = 0;
+        for (int i = 0; i < Gigameters.length; i++) {
+            meters6 = (Gigameters[i] * 1000000000);
+        }
+        return meters6;
+
     }
 
 }
