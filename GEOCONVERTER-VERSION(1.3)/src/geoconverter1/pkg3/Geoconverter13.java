@@ -177,6 +177,7 @@ public class Geoconverter13 {
                     System.out.println("enter the data in Gigameters : ");
                     double[] Gigameters = new double[1];
                     double meters6;
+                    
                     for (int i = 0; i < 1; i++) {
                         Gigameters[i] = input.nextDouble();
                     }
@@ -186,27 +187,33 @@ public class Geoconverter13 {
                     break;
                     
                 case 14: {
-                    double kilometers;
+                    double[] kilometers = new double[1];
                     double milimeters;
                     
                     System.out.println("enter the data in kilometers : ");
-                    kilometers = input.nextDouble();
-                    input.nextLine();
+                    
+                    for (int i = 0; i < 1; i++) {
+                        kilometers[i] = input.nextDouble();
+                        input.nextLine();
+                    }
                     
                     milimeters = transformKmToMm(kilometers);
-                    System.out.println(kilometers + " km is equal to " + milimeters + " mm\n ");
+                    System.out.println(Arrays.toString(kilometers) + " km is equal to " + milimeters + " mm\n ");
                 } break;
                 
                 case 15: {
-                    double miles;
+                    double[] miles = new double[1];
                     double milimeters;
                     
                     System.out.println("enter the data in miles : ");
-                    miles = input.nextDouble();
-                    input.nextLine();
+                    
+                    for (int i = 0; i < 1; i++) {
+                        miles[i] = input.nextDouble();
+                        input.nextLine();
+                    }
                     
                     milimeters = transformMilesToMm(miles);
-                    System.out.println(miles + " miles is equal to " + milimeters + " mm\n ");
+                    System.out.println(Arrays.toString(miles) + " miles is equal to " + milimeters + " mm\n ");
                 } break;
                     
                 case 16:
@@ -366,18 +373,22 @@ public class Geoconverter13 {
 
     }
     
-    private static double transformKmToMm(double kilometers) {
+    private static double transformKmToMm(double[] kilometers) {
         double milimeters = 0;
         
-        milimeters = (kilometers * 1000000);
+        for (int i = 0; i < kilometers.length; i++) {
+            milimeters = (kilometers[i] * 1000000000);
+        }
         
         return milimeters;
     }
     
-    private static double transformMilesToMm(double miles) {
+    private static double transformMilesToMm(double[] miles) {
         double milimeters = 0;
         
-        milimeters = (miles * 1.609e+6);
+        for (int i = 0; i < miles.length; i++) {
+            milimeters = (miles[i] * 1.609e+6);
+        }
         
         return milimeters;
     }
