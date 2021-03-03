@@ -305,42 +305,6 @@ public class Geoconverter13 {
 
     }
 
-    private static void transformGmToM(Scanner input) {
-        double gigameters;
-        double meters;
-        System.out.println("enter enter the data --> ");
-        gigameters = input.nextDouble();
-        meters = gigameters * 1000000000;
-        System.out.println(gigameters + " gigameters is equal to " + meters + " meters\n ");
-    }
-
-    private static void transformerMtoYd(Scanner input) {
-        double meters;
-        double yard;
-        System.out.println("enter enter the data --> ");
-        meters = input.nextDouble();
-        yard = meters * 1.09361;
-        System.out.println(meters + " meters is equal to " + yard + " yard\n ");
-    }
-
-    private static void transformerMiToM(Scanner input) {
-        double miles;
-        double meters;
-        System.out.println("enter enter the data --> ");
-        miles = input.nextDouble();
-        meters = miles * 1609.344;
-        System.out.println(miles + "miles is equal to " + meters + " meters\n ");
-    }
-
-    private static void transformerKmToCm(Scanner input) {
-        double kilometers;
-        double centimeters;
-        System.out.println("enter enter the data --> ");
-        kilometers = input.nextDouble();
-        centimeters = kilometers * 100000;
-        System.out.println(kilometers + " kilometers is equal to " + centimeters + " centimeters\n ");
-    }
-
     private static double transformKmToCm(double[] Kilometers2) {
         double centimeters2 = 0;
         for (int i = 0; i < Kilometers2.length; i++) {
