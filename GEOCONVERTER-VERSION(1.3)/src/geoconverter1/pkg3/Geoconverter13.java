@@ -186,38 +186,40 @@ public class Geoconverter13 {
 
                     break;
                     
-                case 14: {
+                case 14: 
+                    
+                    System.out.println("enter the data in kilometers : ");
                     double[] kilometers = new double[1];
                     double milimeters;
                     
-                    System.out.println("enter the data in kilometers : ");
-                    
                     for (int i = 0; i < 1; i++) {
                         kilometers[i] = input.nextDouble();
-                        input.nextLine();
                     }
                     
                     milimeters = transformKmToMm(kilometers);
                     System.out.println(Arrays.toString(kilometers) + " km is equal to " + milimeters + " mm\n ");
-                } break;
+                    
+                    break;
                 
-                case 15: {
-                    double[] miles = new double[1];
-                    double milimeters;
+                case 15: 
                     
                     System.out.println("enter the data in miles : ");
+                    double[] miles = new double[1];
+                    double milimeters2;
                     
                     for (int i = 0; i < 1; i++) {
                         miles[i] = input.nextDouble();
-                        input.nextLine();
+                        
                     }
                     
-                    milimeters = transformMilesToMm(miles);
-                    System.out.println(Arrays.toString(miles) + " miles is equal to " + milimeters + " mm\n ");
-                } break;
+                    milimeters2 = transformMilesToMm(miles);
+                    System.out.println(Arrays.toString(miles) + " miles is equal to " + milimeters2 + " mm\n ");
+                    
+                  break;
                     
                 case 16:
-                    System.out.println(" * GOOD BYE USER * ");
+                    System.out.println(" \n\n ******** GOOD BYE USER ******** \n" +
+                                       " ********************************");
                     System.exit(0);
                     break;
 
@@ -252,8 +254,8 @@ public class Geoconverter13 {
         System.out.println("▒ 11. Miles to meters.");
         System.out.println("▒ 12. Meters to yards.");
         System.out.println("▒ 13. Gigameters to meters.");
-        System.out.println("▒ 14. Kilometers to Millimeters");
-        System.out.println("▒ 15. Miles to Millimeters");
+        System.out.println("▒ 14. Kilometers to millimeters");
+        System.out.println("▒ 15. Miles to millimeters");
         System.out.println("█ 16. Exit");
 
         System.out.println("Enter your menu option >> ");
@@ -384,12 +386,12 @@ public class Geoconverter13 {
     }
     
     private static double transformMilesToMm(double[] miles) {
-        double milimeters = 0;
+        double milimeters2 = 0;
         
         for (int i = 0; i < miles.length; i++) {
-            milimeters = (miles[i] * 1.609e+6);
+            milimeters2 = (miles[i] * 1.609*2.72+6);
         }
         
-        return milimeters;
+        return milimeters2;
     }
 }
