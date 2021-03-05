@@ -16,14 +16,14 @@ public class Geoconverter13 {
         Scanner input = new Scanner(System.in);
         boolean mainLoop = true;
         int option;
-        double meters;
-        double centimeters;
         double millimeters;
         double micrometers;
         double inches;
         double nanometers;
         double yards;
-
+        double meters;
+        double centimeters;
+        
         do {
 
             printConvertionMenu();
@@ -34,183 +34,183 @@ public class Geoconverter13 {
 
                 case 1:
 
-                    System.out.println("enter the data in Kilometers : ");
+                    System.out.println("====enter the data in Kilometers====: ");
                     double[] Kilometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Kilometers[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Kilometers) + "kilometers is equal to " + transformKmToM(Kilometers) + " meters\n ");
+                    System.out.println(Arrays.toString(Kilometers) + "kilometers is equal to -> " + transformKmToM(Kilometers) + " meters\n ");
 
                     break;
 
                 case 2:
 
-                    System.out.println("enter the data in Meters : ");
+                    System.out.println("====enter the data in Meters==== : ");
                     double[] Meters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Meters[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Meters) + "meters is equal to " + transformMToCm(Meters) + " centimeters\n ");
+                    System.out.println(Arrays.toString(Meters) + "meters is equal to -> " + transformMToCm(Meters) + " centimeters\n ");
 
                     break;
 
                 case 3:
 
-                    System.out.println("enter the data in Meters : ");
+                    System.out.println("====enter the data in Meters====: ");
                     double[] Meters2 = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Meters2[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Meters2) + "meters is equal to " + transformMToMm(Meters2) + " millimeters\n ");
+                    System.out.println(Arrays.toString(Meters2) + "meters is equal to -> " + transformMToMm(Meters2) + " millimeters\n ");
 
                     break;
 
                 case 4:
-                    System.out.println("enter  the data in Nanometers");
+                    System.out.println("====enter  the data in Nanometers====");
 
                     double[] Nanometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Nanometers[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Nanometers) + "nanometers is equal to " + transformMtoNano(Nanometers) + " meters\n");
+                    System.out.println(Arrays.toString(Nanometers) + "nanometers is equal to -> " + transformMtoNano(Nanometers) + " meters\n");
 
                     break;
 
                 case 5:
-                    System.out.println("enter  the data in Feet");
+                    System.out.println("====enter  the data in Feet====");
 
                     double[] Feet = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Feet[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Feet) + "feet is equal to " + transformMtoFeed(Feet) + " meters\n");
+                    System.out.println(Arrays.toString(Feet) + "feet is equal to -> " + transformMtoFeed(Feet) + " meters\n");
 
                     break;
 
                 case 6:
-                    System.out.println("enter the data in Inches");
+                    System.out.println("====enter the data in Inches====");
 
                     double[] Inches = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Inches[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Inches) + "inches is equal to " + transformMtoInches(Inches) + " meters\n");
+                    System.out.println(Arrays.toString(Inches) + "inches is equal to -> " + transformMtoInches(Inches) + " meters\n");
 
                     break;
 
                 case 7:
 
-                    System.out.println("enter the data in Centimeters2 : ");
+                    System.out.println("====enter the data in Centimeters2==== : ");
 
                     double[] Centimeters2 = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Centimeters2[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Centimeters2) + "centimeters is equal to " + transformCmtoMc(Centimeters2) + " micrometers\n ");
+                    System.out.println(Arrays.toString(Centimeters2) + "centimeters is equal to -> " + transformCmtoMc(Centimeters2) + " micrometers\n ");
 
                     break;
 
                 case 8:
 
-                    System.out.println("enter the data in Centimeters : ");
+                    System.out.println("====enter the data in Centimeters==== : ");
 
                     double[] Centimeters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Centimeters[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Centimeters) + "centimeters is equal to " + transformCmtoIn(Centimeters) + " inches\n ");
+                    System.out.println(Arrays.toString(Centimeters) + "centimeters is equal to -> " + transformCmtoIn(Centimeters) + " inches\n ");
 
                     break;
 
                 case 9:
 
-                    System.out.println("enter the data in Millimeters : ");
+                    System.out.println("====enter the data in Millimeters==== : ");
 
                     double[] Millimeters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Millimeters[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Millimeters) + "millimeters is equal to " + transformMmToNano(Millimeters) + " nanometers\n ");
+                    System.out.println(Arrays.toString(Millimeters) + "millimeters is equal to -> " + transformMmToNano(Millimeters) + " nanometers\n ");
 
                     break;
 
                 case 10:
 
-                    System.out.println("enter the data in Kilometers : ");
+                    System.out.println("====enter the data in Kilometers==== : ");
 
                     double[] Kilometers2 = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Kilometers2[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Kilometers2) + "kilometers is equal to " + transformKmToCm(Kilometers2) + " centimeters\n ");
+                    System.out.println(Arrays.toString(Kilometers2) + "kilometers is equal to -> " + transformKmToCm(Kilometers2) + " centimeters\n ");
 
                     break;
 
                 case 11:
 
-                    System.out.println("enter the data in Miles : ");
+                    System.out.println("====enter the data in Miles==== : ");
 
                     double[] Miles = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Miles[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Miles) + "miles is equal to " + transformMiToM(Miles) + " meters\n ");
+                    System.out.println(Arrays.toString(Miles) + "miles is equal to -> " + transformMiToM(Miles) + " meters\n ");
 
                     break;
 
                 case 12:
 
-                    System.out.println("enter the data in Meters : ");
+                    System.out.println("====enter the data in Meters==== : ");
 
                     double[] Meters3 = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Meters3[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Meters3) + "meters is equal to " + transformMtoYd(Meters3) + " yards\n ");
+                    System.out.println(Arrays.toString(Meters3) + "meters is equal to -> " + transformMtoYd(Meters3) + " yards\n ");
 
                     break;
 
                 case 13:
 
-                    System.out.println("enter the data in Gigameters : ");
+                    System.out.println("====enter the data in Gigameters==== : ");
 
                     double[] Gigameters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         Gigameters[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(Gigameters) + "gigameters is equal to " + transformGmToM(Gigameters) + " meters\n ");
+                    System.out.println(Arrays.toString(Gigameters) + "gigameters is equal to -> " + transformGmToM(Gigameters) + " meters\n ");
 
                     break;
 
                 case 14:
 
-                    System.out.println("enter the data in kilometers : ");
+                    System.out.println("====enter the data in kilometers==== : ");
 
                     double[] kilometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
                         kilometers[i] = input.nextDouble();
                     }
-                    System.out.println(Arrays.toString(kilometers) + " km is equal to " + transformKmToMm(kilometers) + " mm\n ");
+                    System.out.println(Arrays.toString(kilometers) + " km is equal to -> " + transformKmToMm(kilometers) + " mm\n ");
 
                     break;
 
                 case 15:
 
-                    System.out.println("enter the data in miles : ");
+                    System.out.println("====enter the data in miles==== : ");
 
                     double[] miles = new double[1];
 
@@ -218,13 +218,13 @@ public class Geoconverter13 {
                         miles[i] = input.nextDouble();
 
                     }
-                    System.out.println(Arrays.toString(miles) + " miles is equal to " + transformMilesToMm(miles) + " mm\n ");
+                    System.out.println(Arrays.toString(miles) + " miles is equal to -> " + transformMilesToMm(miles) + " mm\n ");
 
                     break;
 
                 case 16:
-                    System.out.println(" \n\n ******** GOOD BYE USER ******** \n"
-                            + " ********************************");
+                    System.out.println("***********GOOD BYE**************");
+                    System.out.println("*****THANKS FOR CHOOSING US*****");
                     System.exit(0);
                     break;
 
