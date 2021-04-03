@@ -42,8 +42,8 @@ public class Geoconverter13 {
             switch (option) {
 
                 case 1:
-
                     System.out.println("enter the data in Kilometers : ");
+                    
                     Kilometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -56,8 +56,8 @@ public class Geoconverter13 {
                     break;
 
                 case 2:
-
                     System.out.println("enter the data in Meters : ");
+                    
                     Meters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -69,8 +69,8 @@ public class Geoconverter13 {
                     break;
 
                 case 3:
-
                     System.out.println("enter the data in Meters : ");
+                    
                     Meters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -83,6 +83,7 @@ public class Geoconverter13 {
 
                 case 4:
                     System.out.println("enter  the data in Nanometers");
+                    
                     Nanometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -93,8 +94,8 @@ public class Geoconverter13 {
                     break;
 
                 case 5:
-
                     System.out.println("enter  the data in Feet");
+                    
                     Feet = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -106,8 +107,8 @@ public class Geoconverter13 {
                     break;
 
                 case 6:
-
                     System.out.println("enter the data in Inches");
+                    
                     Inches = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -119,8 +120,8 @@ public class Geoconverter13 {
                     break;
 
                 case 7:
-
                     System.out.println("enter the data in Centimeters : ");
+                    
                     Centimeters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -132,8 +133,8 @@ public class Geoconverter13 {
                     break;
 
                 case 8:
-
                     System.out.println("enter the data in Centimeters : ");
+                    
                     Centimeters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -145,8 +146,8 @@ public class Geoconverter13 {
                     break;
 
                 case 9:
-
                     System.out.println("enter the data in Millimeters : ");
+                    
                     Millimeters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -158,8 +159,8 @@ public class Geoconverter13 {
                     break;
 
                 case 10:
-
                     System.out.println("enter the data in Kilometers : ");
+                    
                     Kilometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -171,8 +172,8 @@ public class Geoconverter13 {
                     break;
 
                 case 11:
-
                     System.out.println("enter the data in Miles : ");
+                    
                     Miles = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -184,8 +185,8 @@ public class Geoconverter13 {
                     break;
 
                 case 12:
-
                     System.out.println("enter the data in Meters : ");
+                    
                     Meters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -197,8 +198,8 @@ public class Geoconverter13 {
                     break;
 
                 case 13:
-
                     System.out.println("enter the data in Gigameters : ");
+                    
                     Gigameters = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -210,8 +211,8 @@ public class Geoconverter13 {
                     break;
 
                 case 14:
-
                     System.out.println("enter the data in Kilometers : ");
+                    
                     Kilometers = new double[1];
 
                     for (int i = 0; i < 1; i++) {
@@ -223,8 +224,8 @@ public class Geoconverter13 {
                     break;
 
                 case 15:
-
                     System.out.println("enter the data in Miles : ");
+                    
                     Miles = new double[1];
 
                     for (int i = 0; i < 1; i++) {
