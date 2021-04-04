@@ -258,7 +258,7 @@ public class GeoconverterController {
     
     public void save(Geoconverter geoconverter ) {
         
-        String data = geoconverter.getUnit()+ " ; " + geoconverter.getValue();
+        String data =  geoconverter.getValueToTransform() + " ; " + geoconverter.getValueToTransformed() + " ; " + geoconverter.getUnit();
         FileManager.save(data, "Geoconverter");
     }
     public static  String[] read(){
