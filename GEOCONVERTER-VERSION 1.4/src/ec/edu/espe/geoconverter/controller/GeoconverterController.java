@@ -22,6 +22,4 @@ public class GeoconverterController {
         data = FileManager.read("geoconverter.cvs");
         return data;
     }
-
 }
-
