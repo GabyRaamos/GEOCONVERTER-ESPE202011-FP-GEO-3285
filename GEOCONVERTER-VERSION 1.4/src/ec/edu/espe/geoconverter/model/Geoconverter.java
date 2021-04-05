@@ -9,6 +9,9 @@ public class Geoconverter {
     /**
      * @return the sourceUnit
      */
+    private String pichinchaCantons;
+    private float length;
+    private float latitude;
     private String sourceUnit;
     private String targetUnit;
     private double valueToTransform;
@@ -16,12 +19,67 @@ public class Geoconverter {
 
     public Geoconverter() {
     }
-    
-    public Geoconverter(double valueToTransform, String sourceUnit, double valueTransformed, String targetUnit) {
+
+    public Geoconverter(String pichinchaCantons, float length, float latitude, double valueToTransform, String sourceUnit, double valueTransformed, String targetUnit) {
+
+        this.pichinchaCantons = pichinchaCantons;
+        this.length = length;
+        this.latitude = latitude;
         this.valueToTransform = valueToTransform;
         this.valueTransformed = valueTransformed;
         this.sourceUnit = sourceUnit;
         this.targetUnit = targetUnit;
+
+    }
+
+    public Geoconverter(double valueToTransform, String sourceUnit, double valueToTransform0, String targetUnit) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Geoconverter(String pichinchaCantons, float length, float latitude) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    /**
+     * @return the pichinchaCantons
+     */
+    public String getPichinchaCantons() {
+        return pichinchaCantons;
+    }
+
+    /**
+     * @param pichinchaCantons the pichinchaCantons to set
+     */
+    public void setPichinchaCantons(String pichinchaCantons) {
+        this.pichinchaCantons = pichinchaCantons;
+    }
+
+    /**
+     * @return the length
+     */
+    public float getLength() {
+        return length;
+    }
+
+    /**
+     * @param length the length to set
+     */
+    public void setLength(float length) {
+        this.length = length;
+    }
+
+    /**
+     * @return the latitude
+     */
+    public float getLatitude() {
+        return latitude;
+    }
+
+    /**
+     * @param latitude the latitude to set
+     */
+    public void setLatitude(float latitude) {
+        this.latitude = latitude;
     }
 
     public double kilometersToMeters() {
