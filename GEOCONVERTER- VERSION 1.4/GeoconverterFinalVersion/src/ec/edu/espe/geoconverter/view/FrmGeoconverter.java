@@ -52,7 +52,6 @@ public class FrmGeoconverter extends javax.swing.JFrame {
         txtTargetValue = new javax.swing.JTextField();
         txtSourceValue = new javax.swing.JTextField();
         txtValue = new javax.swing.JTextField();
-        btnSave = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -112,15 +111,8 @@ public class FrmGeoconverter extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel11.setText("is equal to ");
+        jLabel11.setText("is equivalent to ");
         jLabel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        btnSave.setText("Save ");
-        btnSave.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSaveActionPerformed(evt);
-            }
-        });
 
         jMenu1.setText("File");
         jMenuBar1.add(jMenu1);
@@ -174,11 +166,11 @@ public class FrmGeoconverter extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(8, 8, 8)
                         .addComponent(txtSourceValue, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(10, 10, 10)
                         .addComponent(txtTargetValue, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(86, 86, 86))
+                        .addGap(78, 78, 78))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(49, 378, Short.MAX_VALUE))))
@@ -190,10 +182,7 @@ public class FrmGeoconverter extends javax.swing.JFrame {
                         .addGap(236, 236, 236))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(btnCalculate, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(218, 218, 218))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnSave)
-                        .addGap(277, 277, 277))))
+                        .addGap(227, 227, 227))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,11 +223,9 @@ public class FrmGeoconverter extends javax.swing.JFrame {
                     .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtTargetValue, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtSourceValue, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnSave)
-                .addGap(43, 43, 43)
+                .addGap(34, 34, 34)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(55, 55, 55)
+                .addGap(105, 105, 105)
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
         );
@@ -264,8 +251,7 @@ public class FrmGeoconverter extends javax.swing.JFrame {
         valueTransformed = geoconverterController.convert(sourceUnit, targetUnit, valueToTransform);
         txtTargetValue.setText(String.valueOf(valueTransformed));
         
-        geoconverter = new Geoconverter(valueToTransform, unit);
-        geoconverter = new Geoconverter(valueTransformed);
+        geoconverter = new Geoconverter(valueToTransform,sourceUnit,valueTransformed,targetUnit);
         geoconverterController.save(geoconverter);
 
         txtSourceValue.setText(txtValue.getText());
@@ -277,11 +263,6 @@ public class FrmGeoconverter extends javax.swing.JFrame {
     private void cmbFinalUnitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbFinalUnitActionPerformed
 
     }//GEN-LAST:event_cmbFinalUnitActionPerformed
-
-    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-
-
-    }//GEN-LAST:event_btnSaveActionPerformed
 
     /**
      * @param args the command line arguments
@@ -321,7 +302,6 @@ public class FrmGeoconverter extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCalculate;
-    private javax.swing.JButton btnSave;
     private javax.swing.JComboBox<String> cmbFinalUnit;
     private javax.swing.JComboBox<String> cmbOrigenUnit;
     private javax.swing.Box.Filler filler1;
