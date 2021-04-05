@@ -15,7 +15,7 @@ public class GeoconverterController {
         Geoconverter geoconverter;
 
         if (sourceUnit.equals("Kilometers")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -49,7 +49,7 @@ public class GeoconverterController {
 
             }
         } else if (sourceUnit.equals("Meters")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -83,7 +83,7 @@ public class GeoconverterController {
             }
 
         } else if (sourceUnit.equals("Nanometers")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -117,7 +117,7 @@ public class GeoconverterController {
             }
 
         } else if (sourceUnit.equals("Miles")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -151,7 +151,7 @@ public class GeoconverterController {
             }
 
         } else if (sourceUnit.equals("Feet")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -185,7 +185,7 @@ public class GeoconverterController {
             }
 
         } else if (sourceUnit.equals("Inches")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -219,7 +219,7 @@ public class GeoconverterController {
             }
 
         } else if (sourceUnit.equals("Centimeters")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -253,7 +253,7 @@ public class GeoconverterController {
             }
 
         } else if (sourceUnit.equals("Millimeters")) {
-            geoconverter = new Geoconverter(valueToTransform, sourceUnit, valueToTransform, targetUnit);
+            geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueToTransform);
 
             switch (targetUnit) {
 
@@ -292,11 +292,10 @@ public class GeoconverterController {
 
     public void save(Geoconverter geoconverter) {
 
-        String data = geoconverter.getLength() + "°"  + ";" + geoconverter.getLatitude() + "°" + ";" + geoconverter.getPichinchaCantons()
-                + ";" + geoconverter.getValueToTransform() + " " + geoconverter.getSourceUnit() + " ; " + " is equivalent to " + " ; " + geoconverter.getValueTransformed() + "  " + geoconverter.getTargetUnit();
+        String data = geoconverter.getValueToTransform() + "  " + geoconverter.getSourceUnit() + ";" + " is equivalent to " + " ; " + geoconverter.getValueTransformed() + "  " +  geoconverter.getTargetUnit() ;
         FileManager.save(data, "Geoconverter");
     }
-
+  
     public static String[] read() {
 
         String[] data = new String[FileManager.returnSize("Geoconverter")];

@@ -166,7 +166,7 @@ public class FrmTransformationOfUnitsOfLength extends javax.swing.JPanel {
         valueTransformed = geoconverterController.convert(sourceUnit, targetUnit, valueToTransform);
         txtTargetValue.setText(String.valueOf(valueTransformed));
         
-        geoconverter = new Geoconverter(valueToTransform,sourceUnit,valueTransformed,targetUnit);
+        geoconverter = new Geoconverter(sourceUnit, targetUnit, valueToTransform, valueTransformed);
         geoconverterController.save(geoconverter);
 
         txtSourceValue.setText(txtValue.getText());
