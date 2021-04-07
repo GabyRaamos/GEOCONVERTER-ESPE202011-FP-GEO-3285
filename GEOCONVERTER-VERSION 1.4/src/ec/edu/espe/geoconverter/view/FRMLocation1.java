@@ -121,19 +121,23 @@ public class FRMLocation1 extends javax.swing.JPanel {
                 cmbCantons.addItem("CUENCA");
                 cmbCantons.addItem("GUARANDA");
                 cmbCantons.addItem("TULCAN");
-                cmbProvinces.addItem("AZOGUES");
+                cmbProvinces.addItem("AZUAY");
                 cmbCantons.addItem("SIGCHOS");
+                
+            
             }
-        if (cmbProvinces.getSelectedItem().equals("BOLIVAR"));
+        if (cmbProvinces.getSelectedItem().equals("CAÑAR"));
             {
                 cmbCantons.removeAllItems();
                 cmbCantons.addItem(null);
-                cmbCantons.addItem("ESMERALDAS");
+                cmbCantons.addItem("RIOBAMBA");
                 cmbCantons.addItem("LOS RIOS");
-                cmbCantons.addItem("GUARANDA");
+                cmbCantons.addItem("MEJIA");
                 cmbCantons.addItem("PUYO");
-                cmbProvinces.addItem("AZOGUES");
-                cmbCantons.addItem("SIGCHOS");
+                cmbProvinces.addItem("CAÑAR");
+                cmbCantons.addItem("AZOGUES");
+                cmbCantons.addItem("PIÑAS");
+                
 
             }   
         }catch(Exception e)   
