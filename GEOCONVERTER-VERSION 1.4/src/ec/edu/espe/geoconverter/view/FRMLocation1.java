@@ -121,7 +121,7 @@ public class FRMLocation1 extends javax.swing.JPanel {
                 cmbCantons.addItem("CUENCA");
                 cmbCantons.addItem("GUARANDA");
                 cmbCantons.addItem("TULCAN");
-                cmbProvinces.addItem("AZUAY");
+                cmbProvinces.addItem("AZUAYS");
                 cmbCantons.addItem("SIGCHOS");
                 
             
