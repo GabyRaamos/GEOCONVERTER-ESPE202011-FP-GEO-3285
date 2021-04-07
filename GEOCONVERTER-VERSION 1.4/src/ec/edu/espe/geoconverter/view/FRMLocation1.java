@@ -123,10 +123,9 @@ public class FRMLocation1 extends javax.swing.JPanel {
                 cmbCantons.addItem("TULCAN");
                 cmbProvinces.addItem("AZUAYS");
                 cmbCantons.addItem("SIGCHOS");
-                
-            
+
             }
-        if (cmbProvinces.getSelectedItem().equals("CAÑAR"));
+            if (cmbProvinces.getSelectedItem().equals("CAÑAR"));
             {
                 cmbCantons.removeAllItems();
                 cmbCantons.addItem(null);
@@ -137,12 +136,21 @@ public class FRMLocation1 extends javax.swing.JPanel {
                 cmbProvinces.addItem("CAÑAR");
                 cmbCantons.addItem("AZOGUES");
                 cmbCantons.addItem("PIÑAS");
-                
 
-            }   
-        }catch(Exception e)   
-        {
-            System.out.println(e);                        
+            }
+            if (cmbProvinces.getSelectedItem().equals("PICHINCHA "));
+            {
+                cmbCantons.removeAllItems();
+                cmbCantons.addItem(null);
+                cmbCantons.addItem("QUITO");
+                cmbCantons.addItem("BOLIVAR");
+                cmbCantons.addItem("IBARRA");
+                cmbCantons.addItem("OTAVALO");
+                cmbProvinces.addItem("MANABI");
+                cmbCantons.addItem("CAYAMBE");
+            }
+        } catch (Exception e) {
+            System.out.println(e);
         }
     }//GEN-LAST:event_cmbProvincesActionPerformed
 
