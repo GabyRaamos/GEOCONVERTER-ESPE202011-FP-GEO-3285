@@ -161,7 +161,7 @@ public class FrmMainForm extends javax.swing.JFrame {
                 setContainerView(new FrmMatrixOperations());
             }  break;
             case 2: {
-                setContainerView(new FrmLocation());
+                setContainerView(new FRMLocation1());
             }
         }
         
