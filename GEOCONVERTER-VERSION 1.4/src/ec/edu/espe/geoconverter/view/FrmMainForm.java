@@ -64,7 +64,7 @@ public class FrmMainForm extends javax.swing.JFrame {
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 0, 51)));
 
         menu.setFont(new java.awt.Font("Sitka Display", 0, 18)); // NOI18N
-        menu.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unit conversion", "Matrix operation", " " }));
+        menu.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unit conversion", "Matrix operation", "Location", " " }));
         menu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuActionPerformed(evt);
@@ -160,7 +160,11 @@ public class FrmMainForm extends javax.swing.JFrame {
             case 1: {
                 setContainerView(new FrmMatrixOperations());
             }  break;
+            case 2: {
+                setContainerView(new FrmLocation());
+            }
         }
+        
     }//GEN-LAST:event_menuActionPerformed
 
     private void menuPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_menuPropertyChange

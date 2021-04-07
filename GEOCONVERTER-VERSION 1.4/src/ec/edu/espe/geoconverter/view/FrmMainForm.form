@@ -133,10 +133,11 @@
           <Font name="Sitka Display" size="18" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="3">
+          <StringArray count="4">
             <StringItem index="0" value="Unit conversion"/>
             <StringItem index="1" value="Matrix operation"/>
-            <StringItem index="2" value=" "/>
+            <StringItem index="2" value="Location"/>
+            <StringItem index="3" value=" "/>
           </StringArray>
         </Property>
       </Properties>

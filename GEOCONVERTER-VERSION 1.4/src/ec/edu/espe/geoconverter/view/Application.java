@@ -10,5 +10,6 @@ public class Application {
         view.setVisible(true);
         view.revalidate();
         view.setContainerView(new FrmTransformationOfUnitsOfLength());
+        
     }
 }
