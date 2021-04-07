@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package utils;
 
 import java.io.File;
@@ -6,15 +11,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-
-
 /**
  *
- * @author Gaby Ramos 
+ * @author Sony
  */
 public class FileManager {
     
-
  public static boolean createFile(String fileName) {
         boolean created = false;
         try {
@@ -86,3 +88,4 @@ public class FileManager {
     
 
 }
+
