@@ -47,7 +47,7 @@ public class FRMLocation1 extends javax.swing.JPanel {
 
         cmbProvinces.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
         cmbProvinces.setForeground(new java.awt.Color(0, 0, 204));
-        cmbProvinces.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AZUAY", "BOLIVAR", "CAÑAR", "PICHINCHA" }));
+        cmbProvinces.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AZUAY", "BOLIVAR", "EL ORO", "PICHINCHA" }));
         cmbProvinces.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbProvincesActionPerformed(evt);
@@ -137,6 +137,18 @@ public class FRMLocation1 extends javax.swing.JPanel {
                 cmbCantons.addItem("AZOGUES");
                 cmbCantons.addItem("PIÑAS");
 
+            }
+             if (cmbProvinces.getSelectedItem().equals("EL ORO"));
+            {
+                cmbCantons.removeAllItems();
+                cmbCantons.addItem(null);
+                cmbCantons.addItem("LA CONDORDIA");
+                cmbCantons.addItem("BANCOS");
+                cmbCantons.addItem("MACHALA");
+                cmbCantons.addItem("LAJAS");
+                cmbProvinces.addItem("PORTOVIEJO");
+                cmbCantons.addItem("SALINAS");                
+                
             }
             if (cmbProvinces.getSelectedItem().equals("PICHINCHA "));
             {

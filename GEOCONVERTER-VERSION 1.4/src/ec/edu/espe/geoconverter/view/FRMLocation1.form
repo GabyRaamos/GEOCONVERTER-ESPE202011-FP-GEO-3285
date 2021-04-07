@@ -103,7 +103,7 @@
           <StringArray count="4">
             <StringItem index="0" value="AZUAY"/>
             <StringItem index="1" value="BOLIVAR"/>
-            <StringItem index="2" value="CA&#xd1;AR"/>
+            <StringItem index="2" value="EL ORO"/>
             <StringItem index="3" value="PICHINCHA"/>
           </StringArray>
         </Property>
