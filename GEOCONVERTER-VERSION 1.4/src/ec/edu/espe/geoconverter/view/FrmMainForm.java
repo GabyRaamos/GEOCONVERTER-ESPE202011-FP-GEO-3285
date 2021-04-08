@@ -63,6 +63,7 @@ public class FrmMainForm extends javax.swing.JFrame {
         jLabel1.setText("Select an option :");
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 0, 51)));
 
+        menu.setBackground(new java.awt.Color(255, 204, 204));
         menu.setFont(new java.awt.Font("Sitka Display", 0, 18)); // NOI18N
         menu.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Unit conversion", "Matrix operation", "Location", " " }));
         menu.addActionListener(new java.awt.event.ActionListener() {
