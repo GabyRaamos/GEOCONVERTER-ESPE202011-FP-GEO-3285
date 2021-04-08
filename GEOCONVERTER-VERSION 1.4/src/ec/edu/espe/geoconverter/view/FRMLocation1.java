@@ -47,7 +47,7 @@ public class FRMLocation1 extends javax.swing.JPanel {
 
         cmbProvinces.setFont(new java.awt.Font("Trebuchet MS", 0, 11)); // NOI18N
         cmbProvinces.setForeground(new java.awt.Color(0, 0, 204));
-        cmbProvinces.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AZUAY", "BOLIVAR", "EL ORO", "PICHINCHA" }));
+        cmbProvinces.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "AZUAY", "CAÑAR", "EL ORO", "PICHINCHA" }));
         cmbProvinces.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbProvincesActionPerformed(evt);
@@ -118,48 +118,55 @@ public class FRMLocation1 extends javax.swing.JPanel {
                 cmbCantons.removeAllItems();
                 cmbCantons.addItem(null);
                 cmbCantons.addItem("QUITO");
+                cmbCantons.addItem("MACHALA");
+                cmbCantons.addItem("ARENILLAS");
+                cmbCantons.addItem("RUMIÑAHUI");
+                cmbCantons.addItem("AZOGUES");
+                cmbCantons.addItem("CAÑAR");
                 cmbCantons.addItem("CUENCA");
-                cmbCantons.addItem("GUARANDA");
-                cmbCantons.addItem("TULCAN");
-                cmbProvinces.addItem("AZUAYS");
-                cmbCantons.addItem("SIGCHOS");
+                cmbCantons.addItem("NABÓN");
 
             }
             if (cmbProvinces.getSelectedItem().equals("CAÑAR"));
             {
                 cmbCantons.removeAllItems();
                 cmbCantons.addItem(null);
-                cmbCantons.addItem("RIOBAMBA");
-                cmbCantons.addItem("LOS RIOS");
-                cmbCantons.addItem("MEJIA");
-                cmbCantons.addItem("PUYO");
-                cmbProvinces.addItem("CAÑAR");
+                cmbCantons.addItem("QUITO");
+                cmbCantons.addItem("MACHALA");
+                cmbCantons.addItem("ARENILLAS");
+                cmbCantons.addItem("RUMIÑAHUI");
                 cmbCantons.addItem("AZOGUES");
-                cmbCantons.addItem("PIÑAS");
+                cmbCantons.addItem("CAÑAR");
+                cmbCantons.addItem("CUENCA");
+                cmbCantons.addItem("NABÓN");
 
             }
-             if (cmbProvinces.getSelectedItem().equals("EL ORO"));
+            if (cmbProvinces.getSelectedItem().equals("EL ORO"));
             {
                 cmbCantons.removeAllItems();
                 cmbCantons.addItem(null);
-                cmbCantons.addItem("LA CONDORDIA");
-                cmbCantons.addItem("BANCOS");
+                cmbCantons.addItem("QUITO");
                 cmbCantons.addItem("MACHALA");
-                cmbCantons.addItem("LAJAS");
-                cmbProvinces.addItem("PORTOVIEJO");
-                cmbCantons.addItem("SALINAS");                
-                
+                cmbCantons.addItem("ARENILLAS");
+                cmbCantons.addItem("RUMIÑAHUI");
+                cmbCantons.addItem("AZOGUES");
+                cmbCantons.addItem("CAÑAR");
+                cmbCantons.addItem("CUENCA");
+                cmbCantons.addItem("NABÓN");
+
             }
             if (cmbProvinces.getSelectedItem().equals("PICHINCHA "));
             {
                 cmbCantons.removeAllItems();
                 cmbCantons.addItem(null);
                 cmbCantons.addItem("QUITO");
-                cmbCantons.addItem("BOLIVAR");
-                cmbCantons.addItem("IBARRA");
-                cmbCantons.addItem("OTAVALO");
-                cmbProvinces.addItem("MANABI");
-                cmbCantons.addItem("CAYAMBE");
+                cmbCantons.addItem("MACHALA");
+                cmbCantons.addItem("ARENILLAS");
+                cmbCantons.addItem("RUMIÑAHUI");
+                cmbCantons.addItem("AZOGUES");
+                cmbCantons.addItem("CAÑAR");
+                cmbCantons.addItem("CUENCA");
+                cmbCantons.addItem("NABÓN");
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -170,8 +177,8 @@ public class FRMLocation1 extends javax.swing.JPanel {
 
         String Provinces = (String) cmbProvinces.getSelectedItem();
         cmbProvinces.setSelectedItem(null);
-        String Cantons = (String) cmbCantons.getSelectedItem();
         cmbCantons.setSelectedItem(null);
+        String Cantons = (String) cmbCantons.getSelectedItem();
         txtAreaLocation.append("\n Selected Pronvinces is :" + Provinces + "\n Selected Cantons is :" + Cantons + "\n");
 
     }//GEN-LAST:event_btnSubitActionPerformed
